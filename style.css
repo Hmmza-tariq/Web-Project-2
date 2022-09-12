@@ -1,0 +1,698 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #545454;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#loading {
+    /* position: fixed; */
+    width: 100%;
+    height: 100vh;
+    background: #fff url('https://view.foxdsgn.com/karma-html/images/preloader.svg') no-repeat center center;
+    z-index: 99999;
+}
+
+.heading1 {
+    font-size: 3rem;
+}
+
+.heading2 {
+    font-size: 2.75rem;
+}
+
+.heading3 {
+    font-size: 1.5rem;
+}
+
+.blue {
+    color: #2A74ED;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.banner {
+    position: fixed;
+    width: 100vw;
+    height: 20vh;
+    z-index: 1100;
+}
+
+.envato {
+    padding-top: .75rem;
+    width: 10rem;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    font-size: 1rem;
+    height: 3.5rem;
+    background-color: #262626;
+    line-height: 44px;
+}
+
+.topbuy {
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(141, 194, 62);
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 11%;
+    height: 84%;
+    font-size: 1.2rem;
+}
+
+.topbuy:hover {
+    background-color: rgb(118, 162, 53);
+}
+
+.menulist {
+    display: none;
+}
+
+.mainlogo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* right: 196%; */
+    height: 34px;
+    width: 116px;
+}
+
+.homesect {
+    cursor: pointer;
+    animation-delay: 0.3s;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    align-items: baseline;
+    word-spacing: 3px;
+    position: relative;
+    top: 7.7rem;
+    left: 21vw;
+    background: white;
+    padding-left: 18px;
+    position: fixed;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px 6px rgb(193, 193, 193);
+}
+
+.home {
+    transition: o.4s;
+}
+
+.homesect a {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #262626;
+}
+
+.visible {
+    display: none;
+}
+
+.head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 1%;
+    font-size: 1.25rem;
+    height: 3rem;
+    background-color: #fff;
+    box-shadow: 0px 10px 12px 6px rgb(193, 193, 193);
+}
+
+.header a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.header a:hover {
+    color: #2A74ED;
+
+}
+
+
+.frontsect {
+    position: relative;
+    padding-top: 20rem;
+    line-height: 1.5rem;
+    height: 100vh;
+}
+
+.purchase {
+    background-color: #2A74ED;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    text-align: center center;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.purchase:hover {
+    background-color: #fff;
+    color: #2A74ED;
+    border: 2px solid #2A74ED;
+    transition: 0.3s;
+}
+
+.link1 {
+    color: #2A74ED;
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+.link1:hover {
+    text-decoration: none;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #2A74ED;
+    cursor: pointer;
+}
+
+.link2:hover {
+    color: #262626;
+    transition: 0.3s;
+}
+
+.topban {
+    position: relative;
+    top: 10rem;
+    object-fit: cover;
+    height: 44vh;
+    width: 100%;
+}
+
+.headbox1,
+.headbox2 {
+    position: relative;
+    line-height: 2.5rem;
+    text-align: center;
+    top: 25vh;
+    width: 71vw;
+    display: inline-block;
+}
+
+.colsect {
+    display: flex;
+    background-color: rgba(42, 116, 237, 0.05);
+    position: relative;
+    top: 22rem;
+}
+
+.colgp1,
+.colgp2,
+.colgp3 {
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2%;
+}
+
+.colimg {
+    transition: 0.4s;
+}
+
+.colimg:hover {
+    rotate: -15deg;
+    opacity: 0.5;
+}
+
+#ms-id {
+    padding-top: 11rem;
+    position: relative;
+    top: 20rem;
+}
+
+.mediasect {
+    position: relative;
+    top: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 4rem;
+}
+
+.ms {
+    margin: 2rem;
+    height: 46vh;
+    width: 20vw;
+    object-fit: cover;
+    box-shadow: 0px 0px 12px 6px rgb(193, 193, 193);
+}
+
+.ms1 {
+    background-image: url(img/block/main-home.jpg);
+}
+
+.ms2 {
+    background-image: url(img/block/Home-saas.jpg);
+}
+
+.ms3 {
+    background-image: url(img/block/Home-business.jpg);
+}
+
+.ms4 {
+    background-image: url(img/block/Home-Political.jpg);
+}
+
+.ms5 {
+    background-image: url(img/block/Home-Education.jpg);
+}
+
+.ms6 {
+    background-image: url(img/block/Home-event.jpg);
+}
+
+.ms7 {
+    background-image: url(img/block/Home-church.jpg);
+}
+
+.ms8 {
+    background-image: url(img/block/Barbershop-home.jpg);
+}
+
+.ms9 {
+    background-image: url(img/block/Home-yoga.jpg);
+}
+
+.ms10 {
+    background-image: url(img/block/Home-Restaurant.jpg);
+}
+
+.ms11 {
+    background-image: url(img/block/Home-Travel.jpg);
+}
+
+.ms12 {
+    background-image: url(img/block/Home-Construction.jpg);
+}
+
+.ms13 {
+    background-image: url(img/block/Medicone-home.jpg);
+}
+
+.ms14 {
+    background-image: url(img/block/Home-shop.jpg);
+}
+
+.ms15 {
+    background-image: url(img/block/Home-SEO.jpg);
+}
+
+.ms16 {
+    background-image: url(img/block/Home-non.jpg);
+}
+
+.ms17 {
+    background-image: url(img/block/Homepage.jpg);
+}
+
+.ms {
+    transition: ease-in-out 3s;
+}
+
+.ms:hover {
+    background-position: bottom;
+}
+
+.blur {
+    margin: 2rem;
+    height: 46vh;
+    width: 20vw;
+    object-fit: cover;
+    box-shadow: 0px 0px 12px 6px rgb(193, 193, 193);
+    background-position: top;
+    filter: blur(8px);
+    border: 1px solid #262626;
+    transition: all 2s ease-in-out;
+}
+
+.blur:hover{
+    position: relative;
+    top: -1rem;
+}
+
+.mediasect h5 {
+    text-decoration: none;
+    color: #262626;
+    cursor: pointer;
+}
+
+.prt0 {
+    position: relative;
+    top: 1rem;
+}
+
+.prt2 {
+    position: relative;
+    top: 22rem;
+}
+
+.prt3 {
+    position: relative;
+    top: 30rem;
+    display: inline-block;
+    width: 99vw;
+}
+
+.prt4 {
+    position: relative;
+    top: 32rem;
+}
+
+.prt5 {
+    position: relative;
+    top: 32rem;
+}
+
+.prt6 {
+    position: relative;
+    top: 34rem;
+}
+
+.prt7 {
+    position: relative;
+    top: 34rem;
+}
+
+#bs-id {
+    padding-top: 15rem;
+    position: relative;
+    top: 22rem;
+}
+
+.blocksect {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 116, 237, 0.05);
+    position: relative;
+    top: 25rem;
+}
+
+.bss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bs {
+    width: 15rem;
+    height: 20rem;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: 12px 12px 12px 6px rgb(193, 193, 193);
+
+}
+
+.bs div {
+    margin: 5px;
+}
+
+.imgbs {
+    cursor: pointer;
+    transition: all 5s ease-in;
+}
+
+.imgbs:hover {
+    block-size: 20%;
+}
+.slider1sect {
+    overflow: hidden;
+    position: relative;
+    top: 30rem;
+}
+
+.ssInner {
+    width: 250%;
+    position: relative;
+    left: 0px;
+    display: grid;
+    grid-template-columns: repeat(8, 10fr);
+    gap: 3px;
+    transition: 0s ease-in;
+    pointer-events: none;
+}
+
+.ss {
+    height: 60vh;
+    margin: 3rem;
+}
+
+#cs-id {
+    padding-top: 12rem;
+}
+
+.countsect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(42, 116, 237, 0.05);
+    position: relative;
+    top: 30rem;
+}
+
+.cg {
+    margin: 2rem;
+    width: 10rem;
+}
+
+.slide {
+    width: 25px;
+    height: 44px;
+}
+
+.rwleft,
+.rwright {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+.rw {
+    margin: 1rem;
+    display: none;
+}
+
+.rws {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgrew {
+    height: 303.77px;
+    width: 26vw;
+}
+
+.imgrew:hover {
+    border-bottom: 3px solid #2A74ED;
+    cursor: pointer;
+    transition: 0s;
+}
+
+.rw3,
+.rw6 {
+    height: 250px;
+}
+
+.reviewsect {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30rem;
+}
+
+.rwactive {
+    display: block;
+}
+
+#ps-id {
+    padding-top: 12rem;
+}
+
+.pk {
+    text-align: center;
+    position: relative;
+}
+
+.slider2sect {
+    overflow: hidden;
+    position: relative;
+    top: 32rem;
+}
+
+.ssInner_2 {
+    width: 620%;
+    position: relative;
+    left: 0px;
+    display: grid;
+    grid-template-columns: repeat(17, 10fr);
+    gap: 3px;
+    transition: 0s ease-in;
+    pointer-events: none;
+}
+
+.ss_2 {
+    height: 60vh;
+    margin: 3rem;
+}
+
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.r0 {
+    transition: none;
+}
+
+.r1 {
+    transition: all 0.5s ease-in;
+}
+
+.r2 {
+    transition: all 0.8s ease-in;
+}
+
+.r3 {
+    transition: all 1.2s ease-in;
+}
+
+.active_1 {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+footer {
+    background: #fff url('img/bg.jpg') no-repeat center center;
+    height: 42vh;
+    color: #fff;
+    padding: 2rem;
+    padding-bottom: 0px;
+    padding-top: 6rem;
+    position: relative;
+    top: 32rem;
+}
+
+
+@keyframes movedown {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: 100vh
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 747px) {
+    .bs {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1111px) {
+    .bs {
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .colsect {
+        display: flex;
+        background-color: rgba(42, 116, 237, 0.05);
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+    }
+
+    .colgp1,
+    .colgp2,
+    .colgp3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .colgp1 .light,
+    .colgp2 .light,
+    .colgp3 .light {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    html {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .menulist {
+        display: block;
+        position: absolute;
+        left: 85vw;
+    }
+
+    .head {
+        display: flex;
+        background: #545454;
+        align-items: center;
+        flex-direction: column;
+        height: 57vh;
+    }
+
+    /* #menu{
+        display: none;
+    } */
+}
