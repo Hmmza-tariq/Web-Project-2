@@ -7,6 +7,22 @@ function loadpage() {
 };
 //****************************************************************************************************************** */
 //****************************************************************************************************************** */
+
+function openNav() {
+    document.querySelector(".head").style.width = "300px";
+    document.querySelector(".navmenu").style.marginLeft = "300px";
+    document.querySelector('.home').innerHTML = 'Home<hr><span class="inner"><ul>Main Home </ul><ul>Home SAAS </ul><ul>Home Business </ul><ul>Home Political </ul><ul>Home Education </ul><ul>Home Event </ul><ul>Home Church </ul></span><hr>';
+  }
+  
+  function closeNav() {
+    document.querySelector(".head").style.width = "0";
+    document.querySelector(".navmenu").style.marginLeft= "0";
+    document.querySelector('.home').innerHTML = 'Home';
+  }
+
+//****************************************************************************************************************** */
+//****************************************************************************************************************** */
+
 document.querySelector('.home').addEventListener('mouseenter', menu_in);
 document.querySelector('.hm').addEventListener('mouseleave', menu_out);
 
@@ -17,6 +33,7 @@ function menu_in(){
 function menu_out(){
     document.querySelector('.homesect').classList.add('visible');
 }
+
 //****************************************************************************************************************** */
 //****************************************************************************************************************** */
 
