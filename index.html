@@ -12,40 +12,49 @@
     <title>Karma - Responsive Clean Website Template</title>
 </head>
 
-<body>
+<body onload="loadpage()">
+    <div id="loading"></div>
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="banner">
-        <div class="tophead">
-            <a href="https://themeforest.net/item/karma-responsive-clean-website-template/234990?_ga=2.126259396.877649292.1661485501-1463965225.1661264991"
-            class="envato"><img src="img/envato.png" height="40px" width="150px"></a>
+        <section class="banner">
+        <!-- //////////////////////////////////////////////////// -->
+        <!-- //////////////////////////////////////////////////// -->
+        <div class="header_1">
+            <a
+                href="https://themeforest.net/item/karma-responsive-clean-website-template/234990?_ga=2.126259396.877649292.1661485501-1463965225.1661264991">
+                <img src="img/envato.png" class="envato">
+            </a>
             <button class="topbuy" type="button">Buy now</button>
         </div>
+        <!-- //////////////////////////////////////////////////// -->
+        <!-- //////////////////////////////////////////////////// -->
         <nav class="header">
-            <img src="img/menu.png" class="menulist" onclick="togglemenu()">
-            <div class="head" id="menu">
-                <span><img class="mainlogo" src="img/logo.png"></span>
-                <span class="hm"><a href="#fs-id" class="home">Home</a>
-                    <span class = "homesect visible">
-                        <a href="#fs-id">Main Home          </a>
-                        <a href="#fs-id">Home SAAS          </a>
-                        <a href="#fs-id">Home Business      </a>
-                        <a href="#fs-id">Home Political     </a>
-                        <a href="#fs-id">Home Education     </a>
-                        <a href="#fs-id">Home Event         </a>
-                        <a href="#fs-id">Home Church        </a>
-                        <a href="#fs-id">Home Barbershop    </a>
-                        <a href="#fs-id">Home Yoga          </a>
-                        <a href="#fs-id">Home Resaturant    </a>
-                        <a href="#fs-id">Home Travel        </a>
-                        <a href="#fs-id">Home Construction  </a>
+            <span class="navmenu" onclick="openNav()">&#9776;</span>
+            <img class="mainlogo" src="img/logo.png">
+            <div class="head">
+                <span class="hm">
+                    <a class="closebtn" onclick="closeNav()">close x</a>
+                    <a href="#fs-id" class="home">Home</a>
+                    <span class="homesect visible">
+                        <a href="#fs-id">Main Home </a>
+                        <a href="#fs-id">Home SAAS </a>
+                        <a href="#fs-id">Home Business </a>
+                        <a href="#fs-id">Home Political </a>
+                        <a href="#fs-id">Home Education </a>
+                        <a href="#fs-id">Home Event </a>
+                        <a href="#fs-id">Home Church </a>
+                        <a href="#fs-id">Home Barbershop </a>
+                        <a href="#fs-id">Home Yoga </a>
+                        <a href="#fs-id">Home Resaturant </a>
+                        <a href="#fs-id">Home Travel </a>
+                        <a href="#fs-id">Home Construction </a>
                     </span>
                 </span>
-                <a href="#ms-id" class="demo">      Demos          </a>
-                <a href="#bs-id" class="feature">   Features       </a>
-                <a href="#cs-id" class="test">      Testimonals    </a>
-                <a href="#ps-id" class="niche">     Niche Demos    </a>
-                <a href="#ft-id" class="buy">       Buy now        </a>
+                <a href="#ms-id" class="demo"> Demos </a>
+                <a href="#bs-id" class="feature"> Features </a>
+                <a href="#cs-id" class="test"> Testimonals </a>
+                <a href="#ps-id" class="niche"> Niche Demos </a>
+                <a href="#ft-id" class="buy"> Buy now </a>
             </div>
         </nav>
     </section>
