@@ -418,8 +418,8 @@ body {
 }
 
 .blocksect {
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
