@@ -352,14 +352,14 @@ body {
 
 .blur {
     margin: 2rem;
-    height: 46vh;
+    height: 35vh;
     width: 20vw;
     object-fit: cover;
     box-shadow: 0px 0px 12px 6px rgb(193, 193, 193);
     background-position: top;
-    filter: blur(8px);
-    border: 1px solid #262626;
+    background-size: contain;
     transition: all 2s ease-in-out;
+    background-repeat: no-repeat;
 }
 
 .blur:hover {
@@ -625,12 +625,15 @@ footer {
         margin: 1rem;
     }
 
-    .ms,
-    .blur {
+    .ms {
         height: 46vh;
         width: 250px;
     }
 
+    .blur{
+        height: 25vh;
+        width: 250px;
+    }
 }
 
 @media (max-width: 1111px) {
