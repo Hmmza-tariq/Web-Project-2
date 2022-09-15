@@ -14,12 +14,21 @@ body {
     text-align: center;
 }
 
-#loading {
-    /* position: fixed; */
-    width: 100%;
+.load{
+    /* display: block;
+    z-index: 9999;
+    /* position: absolute; 
+    width: 5vw;
+    height: 5vw;
+    box-shadow: 2px 2px 2px #2A74ED;
+    content: '';
+    border-radius: 50%;
+    animation: ring 2s linear;
+    background: #fff url('https://view.foxdsgn.com/karma-html/images/preloader.svg') no-repeat center center; */
+    background-color: #fff;
     height: 100vh;
-    background: #fff url('https://view.foxdsgn.com/karma-html/images/preloader.svg') no-repeat center center;
-    z-index: 99999;
+    width: 100vw;
+    position: fixed;
 }
 
 .heading1 {
@@ -42,10 +51,9 @@ body {
     font-weight: lighter;
 }
 
-
 .banner {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1100;
 }
 
@@ -80,8 +88,7 @@ body {
 }
 
 .header {
-    width: 100%;
-    padding: 1%;
+    width: 100vw;
     font-size: 1.25rem;
     height: 3rem;
     background-color: #fff;
@@ -121,7 +128,9 @@ body {
 .home {
     transition: 0.4s;
 }
-
+.inner ul:hover{
+    color: #262626;
+}
 .homesect {
     cursor: pointer;
     animation-delay: 0.3s;
@@ -140,7 +149,6 @@ body {
     border-radius: 5px;
     box-shadow: 1px 1px 12px 6px rgb(193, 193, 193);
 }
-
 
 .homesect a {
     font-size: 0.75rem;
@@ -240,7 +248,7 @@ body {
     width: 30%;
     text-align: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
     margin: 2%;
 }
 
@@ -418,8 +426,8 @@ body {
 }
 
 .blocksect {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,14 +478,13 @@ body {
     left: 0px;
     display: grid;
     grid-template-columns: repeat(8, 10fr);
-    gap: 3px;
+    gap: 2rem;
     transition: 0s ease-in;
     pointer-events: none;
 }
 
 .ss {
     height: 60vh;
-    margin: 3rem;
 }
 
 #cs-id {
@@ -568,14 +575,13 @@ body {
     left: 0px;
     display: grid;
     grid-template-columns: repeat(17, 10fr);
-    gap: 3px;
+    gap: 2rem;
     transition: 0s ease-in;
     pointer-events: none;
 }
 
 .ss_2 {
     height: 60vh;
-    margin: 3rem;
 }
 
 .reveal {
@@ -615,7 +621,17 @@ footer {
     position: relative;
     top: 32rem;
 }
-
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
 @media (max-width: 1200px) {
     .blocksect {
         padding: 4rem 0rem;
@@ -637,7 +653,6 @@ footer {
 }
 
 @media (max-width: 1111px) {
-
 
     .colsect {
         display: flex;
@@ -690,7 +705,7 @@ footer {
 
     .topbuy {
         width: 5rem;
-        height: 1.5rem;
+        height: 1.4rem;
         font-size: 0.9rem;
         padding: 0.25rem;
         margin: 0.25rem;
@@ -706,14 +721,19 @@ footer {
     }
 
     .closebtn {
+        border: none;
+        background-color: #fff;
+        font-size: 1rem;
         display: block;
-        position: absolute;
-        top: 8vh;
-        left: 19vw;
+        position: relative;
+        left: 75%;
         z-index: 2;
         font-weight: 600;
+        justify-content: flex-end;
     }
-
+    .closebtn:hover{
+        color:red
+    }
     .head {
         width: 0;
         position: fixed;
@@ -723,7 +743,7 @@ footer {
         overflow-x: hidden;
         transition: 0.5s;
         margin: 0% -3%;
-        padding-top: 15vh;
+        padding-top: 5vh;
         padding-bottom: 75vh;
         line-height: 2rem;
         font-weight: 400;
@@ -767,10 +787,6 @@ footer {
         font-size: 1rem;
     }
 
-    .inner ul:hover {
-        color: #2A74ED;
-    }
-
     .bs {
         height: 60%;
         width: 80vw;
@@ -780,14 +796,21 @@ footer {
     .reviewsect {
         object-fit: cover;
         overflow: hidden;
+        width: 90vw;
     }
 
     .imgrew {
-        height: 45vh;
         width: 60vw;
-        margin: 0% 15rem;
+        height: 45vh;
+        margin: 0% 1rem;
+    }
+    .a1,.a2,.slide{
+        display: none;
     }
 
+    .ssInner,.ssInner_2 {
+        width: 100vw;
+    }
     footer {
         height: 60%;
         position: relative;
