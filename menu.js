@@ -1,6 +1,6 @@
 //****************************************************************************************************************** */
 //****************************************************************************************************************** */
-var preloader = document.getElementById("loading");
+var preloader = document.getElementsByClassName("load");
 
 function loadpage() {
     preloader.style.display = 'none';
