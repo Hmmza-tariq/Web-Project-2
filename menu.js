@@ -1,10 +1,9 @@
 //****************************************************************************************************************** */
 //****************************************************************************************************************** */
-var preloader = document.getElementsByClassName("load");
-
-function loadpage() {
+let preloader = document.querySelector(".load");
+window.addEventListener('load', () => {
     preloader.style.display = 'none';
-};
+});
 //****************************************************************************************************************** */
 //****************************************************************************************************************** */
 
@@ -65,22 +64,6 @@ sld.addEventListener('mousemove', (e) => {
     checkBoundary();
 });
 
-sld.addEventListener('touchstart', (e) => {
-    pressed = true;
-    startX = e.offsetX - in_sld.offsetLeft;
-    sld.style.cursor = 'grabbing';
-});
-sld.addEventListener('touchend', () => {
-    sld.style.cursor = 'grab';
-    pressed = false;
-});
-sld.addEventListener('touchmove', (e) => {
-    if (!pressed) return;
-    e.preventDefault();
-    w = e.offsetX;
-    in_sld.style.left = `${w - startX}px`;
-    checkBoundary();
-});
 function checkBoundary() {
     let outer = sld.getBoundingClientRect();
     let inner = in_sld.getBoundingClientRect();
@@ -161,23 +144,6 @@ sld_2.addEventListener('mousemove', (e) => {
     checkBoundary_2();
 });
 
-sld_2.addEventListener('touchstart', (e) => {
-    pressed_2 = true;
-    startX_2 = e.offsetX - in_sld_2.offsetLeft;
-    sld_2.style.cursor = 'grabbing';
-});
-
-sld_2.addEventListener('touchend', () => {
-    sld_2.style.cursor = 'grab';
-    pressed_2 = false;
-});
-sld_2.addEventListener('touchmove', (e) => {
-    if (!pressed_2) return;
-    e.preventDefault();
-    w_2 = e.offsetX;
-    in_sld_2.style.left = (w_2 - startX_2);
-    checkBoundary_2();
-});
 function checkBoundary_2() {
     let outer_2 = sld_2.getBoundingClientRect();
     let inner_2 = in_sld_2.getBoundingClientRect();
