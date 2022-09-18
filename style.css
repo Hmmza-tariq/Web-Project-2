@@ -28,11 +28,10 @@ body {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    position: relative;
-    left: 43.7vw;
-    top: 43.7vh;
-    /* margin: 3rem; */
     z-index: 99999;
+    display: inline-grid;
+    position: relative;
+    top: 43.6%;
 }
 
 .heading1 {
